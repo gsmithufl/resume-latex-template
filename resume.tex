@@ -1,0 +1,103 @@
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{\input{imports/name.txt}}     % Your name
+\address{\input{imports/address.txt}}  % Your address
+\address{\input{imports/contactinfo.txt}} % Your phone number and email
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Florida}  \hfill { Gainesville, FL }
+\\ \em { Bachelors of Science in Electrical Engineering, Cum Laude }
+   \hfill \em { January YYYY }
+\\ { GPA 0.00/4.00 }
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%-------------------------------------------------------------------------------
+
+\begin{rSection}{Core Information}
+\vspace{-0.2em}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages &  C, Python, Bash, Assembly, VHDL, C\#, Siglab \\
+Software \& Tools     &  Ceedling, Vivado/SDK, Valgrind, GDB, Modelsim, Jenkins, Docker, Linux, Atlassian \\
+Methodologies         &  Continuous Integration, Test Driven Development (TDD), Agile, Genetic Algorithms \\
+Additional Attributes &  Certs, Clubs, Etc \\
+\end{tabular}
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Company 1, Inc.}
+                   {Anywhere, AK}
+                   {Position Title}
+                   {Month YYYY - Present}
+
+\item Here the user can list resume bullet points
+
+\item Here is a second pullet point. I recommend allowing the document to wrap rather than line limiting. This reduces the git diff on changes.
+
+\end{rSubsection}
+
+\begin{rSubsection}{Company 2, Inc.}
+                   {Anywhere, AZ}
+                   {Position Title}
+                   {Month YYYY - Month YYYY}
+
+\item Generally your most recent job should be first
+
+\item Here is another item
+
+\end{rSubsection}
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+
+\begin{rSection}{Relevant Courses}
+\itab{\textbf{}} \tab{}  \tab{\textbf{}}
+\\ \itab{Comment out this section if not applicable}
+\\ \itab{Computer Architecture } \tab{}  \tab{Reconfigurable/Parallel Computing}
+\\ \itab{Microprocessor Applications} \tab{}  \tab{Digital Design}
+\\ \itab{Linear Algebra} \tab{}  \tab{}
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%-------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\begin{rSubsection}{}{}{}{}
+\vspace{-0.8em}
+
+\item Sometimes it can be helpful to have a section describing personal projects.
+
+\item Maybe you have more than one!
+
+\end{rSubsection}
+
+\end{rSection}
+
+\end{document}
