@@ -1,18 +1,35 @@
 # Overview
 
-This template provides a container environment to quickly start using latex as a resume template. The beauty of latex is that it takes care of all formatting for the developer. It removes the need for painful tedious edits to word documents for alignment or text fitting. This template provides a small makefile to assist the user with latex commands which are easily forgotten if not used regularly. There is a small scripting system in place to compile the document which warns on compile failure.
+This template provides a container environment to quickly start using latex as a resume template. The beauty of latex is that it takes care of all formatting for the developer. It removes the need for painful tedious edits to word documents for alignment or text fitting.
+
+![](docs/resume.png)
+
+This template provides a small makefile to assist the user with latex commands which are easily forgotten if not used regularly. There is a small scripting system in place to compile the document which warns on compile failure.
+
+## Requirements
+
+* linux
+  * docker
+* windows
+  * windows subsystem for linux
+  * docker
 
 ## Building
 
-This system was built using VS Code to ssh into the container. When opening the workspace in VS Code via `File > Open workspace from file > resume-latex-template.code-workspace` it will inform the user that the project can be reopened in a container. Select this and the environment will automatically be created. In a linux environment this only requires docker. In a windows environment this requires docker and windows subsystem for linux.
+### Overview
+This system was built using VS Code to ssh into the container. When opening the workspace in VS Code via `File > Open workspace from file > resume-latex-template.code-workspace` it will inform the user that the project can be reopened in a container. Select this and the environment will automatically be created.
+
+In a linux environment this only requires docker. In a windows environment this requires docker and windows subsystem for linux.
 
 This system also automatically installs a couple of VS Code extensions that are helpful for editing tex and spellchecking.
 
-### `make`
-Review the small makefile for sub-make commands provided, but in the container environment simply call:
+### Commands
 
-### `make clean`
-To remove build artifacts:
+You may review the small Makefile for specific commands.
+
+`make` - compile the latex documents and output the PDFs.
+
+`make clean` - remove the build artifacts.
 
 ## Structure
 
